@@ -10,7 +10,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-
+import { AlertModule } from 'ngx-bootstrap/alert';  
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +25,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     
    ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     FormsModule,
     AppRoutingModule
